@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .main {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(128, 128, 128, 0.312);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .container {
+        height: 700px;
+        width: 900px;
+        background-color: white;
+        display: flex;
+        padding: 30px;
+        box-shadow:10px 20px 30px grey;
+        justify-content: space-between;
+        border-radius: 7px;
+    }
+    .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+      
+
+
+</style>
+<body>
+    <div class="main">
+      <div class="container">
+
+
+<!-- FirstDiv -->        
+        <div class="first">
+<!-- TextField -->
+            <div style="display: flex;gap: 2px;">
+                <label style="font-weight:bold ;font-size: larger;">Text Field </label>
+                <h3 style="color: red;">*</h3>
+            </div>
+
+            <br>    
+            <input style="height: 50px;width: 380px;border-radius: 7px;border: 2px solid grey;padding: 10px;" type="email" placeholder="Input Text"></input>
+<!-- TextField -->
+            <br>
+            <br>            
+<!-- SelectField -->
+            <div style="display: flex;gap: 10px;">
+                <label style="font-weight:bold ;font-size: larger;">Select Field</label>
+                <i style="color: grey;margin-top: 3px;" class="fa-solid fa-circle-info"></i>
+            </div>
+            <br>
+            <select style="height: 50px;width: 380px;border-radius: 7px;border: 2px solid grey;padding: 10px;">
+                <option value="branch">Select</option>
+                <option value="branch">Mechanical</option>
+                <option value="branch">CS</option>
+                <option value="branch">IT</option>
+                <option value="branch">Civil</option>
+            </select>
+<!-- SelectField -->
+            <br>
+            <br> 
+<!-- TextField -->
+            <label style="font-weight:bold ;font-size: larger;">Text Area </label>
+            <br>
+            
+            <textarea style="height: 90px;width: 380px;border-radius: 7px;"></textarea>
+            <br>
+            <br>
+<!-- TextField -->
+
+<!-- Text Field with Add-ons -->
+            <div style="display: flex;gap: 2px;gap:4px">
+            <label style="font-weight:bold ;font-size: larger;">Text Field with Add-ons</label>
+            <h3 style="color: red;">*</h3>
+            <i style="color: grey;margin-top: 3px;" class="fa-solid fa-circle-info"></i>
+            </div>
+            <br>
+          
+            <div style="height: 50px;width: 380px;border: 2px solid grey;display: flex;gap: 5px;align-items: center;border-radius: 7px;">
+                <label style="margin-left: 5px;">Label <input style="border: 0px solid white;height: 40px;width: 240px;"></input></label>
+                <button style="height: 50px;width: 70px;background-color: white;margin-left: 5px;border: 2px solid grey;border-radius: 7px;border-right: white;font-weight: bold;">Button</button>
+            </div>
+            <br>
+<!-- Text Field with Add-ons-->
+
+<!-- Multiselect Field -->
+            <label style="font-weight:bold ;font-size: larger;">Multiselect Field</label>
+     
+            <div style="height: 50px;width: 380px;border: 2px solid grey;display: flex;gap: 5px;align-items: center;border-radius: 7px;background-color: rgba(128, 128, 128, 0.236);justify-content: space-between;">
+                <div style="height: 70%;width: 120px;background-color: white;border-radius: 50px;margin-left: 10px;border: 1px solid gray;display: flex;">
+                    <div style="height: 50px;width: 20px;display: flex;align-items: center;border-radius: 40px;"><img style="height: 25px;width: 25px;margin-bottom: 19px;margin-left: 7px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmPMqmhCs3WJiUvLOkJnw_Ol4RYS2kV3YTjQ&usqp=CAU"/></div>
+                    <label style="margin-top: 5px;margin-left: 14px;">Label</label>
+                    <i style="color: grey;margin-top: 6px;margin-left: 5px;" class="fa-sharp fa-solid fa-circle-xmark"></i>
+                </div>
+               
+                <select style="background-color:  rgba(128, 128, 128, 0);border: 0px;">
+                    <option value="branch"></option>
+                    <option value="branch">Mechanical</option>
+                    <option value="branch">CS</option>
+                    <option value="branch">IT</option>
+                    <option value="branch">Civil</option>
+                </select>
+            </div>
+            Multiselect Field
+
+        </div>
+
+<!-- FirstDiv -->
+        <div style="padding: 10px;display: flex;flex-direction: column;" class="second">
+
+            <!-- Search -->
+            <div style="height: 50px;width: 380px;border:2px solid grey;margin-top: 38px;border-radius: 7px;display: flex;padding: 10px;align-items: center;gap: 10px;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input style="border: 0;font-weight: bold;"placeholder="Search"></input>
+            </div>
+<!-- Search -->
+            <br>
+<!-- +1- -->
+            <div style="height: 50px;width: 140px;border:2px solid grey;display: flex;align-items: center;justify-content: space-around;border-radius: 7px;">
+
+                <i style="color: grey;"  class="fa-solid fa-minus"></i>
+                <i style="color: grey;"  class="fa-solid fa-1"></i>
+                <i style="color: grey;"  class="fa-solid fa-plus"></i>
+            </div>
+<!-- +1- -->
+<br>
+
+<!-- Label -->
+            <div style="height: 60px;width: 180px;border:2px solid grey;display: flex;align-items: center;border-radius: 7px;justify-content: space-between;background-color: rgba(128, 128, 128, 0.108);">
+                <div style="background-color: white;height: 99%;width: 50%;border:2px solid grey;border-radius: 7px; box-shadow:3px 3px 4px grey;;justify-content: center;align-items: center;display: flex;">
+                <label style="font-size: larger;font-weight: bold;">Label</label></div>
+                <label style="margin-right: 20px;font-size: larger;font-weight: bold;">Label</label>
+            </div>
+<!-- Label -->
+<br>
+            <div style="display: flex;height: 60px;width: 139px;justify-content:space-between;align-items: center;">
+                <input style="height: 100px;width: 20px;" type="checkbox"><h3>Check Box</h3></input>
+            </div>
+<!-- Label -->
+<br>
+<!-- Radio -->
+
+            <div style="display: flex;height: 60px;width: 139px;justify-content:space-between;align-items: center;">
+            <input style="height: 100px;width: 20px;" type="radio"><h3>Check Box</h3></input>
+            </div>
+
+<!-- Radio -->
+<br>
+<div style="display: flex;height: 50px;width: 300px;gap: 10px;align-items: center;">
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <h3>Slider</h3>
+</div>
+
+  
+
+        </div>
+      </div>
+    </div>
+</body>
+</html>

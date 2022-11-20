@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <div class="main" style="height: 100vh;width: 100vw;background-color: rgba(0, 0, 0, 0.865);display: flex;flex-direction: column;align-items: center;">
+            <div class="first" style="height: 70%;width: 100%;display: flex;flex-direction: column;align-items: center;padding: 20px;">
+                <h3 style="color: white;">A Bit About Me</h3>
+                <br>
+                <h1 style="color: orange;">Who Am I?</h1>
+                <br>
+                <img style="border-radius:50% ;height: 300px;width: 300px;border: 3px solid orange;" src="https://i.pinimg.com/736x/46/46/3f/46463f00c0db960a677c04f072238b82.jpg" />
+                <br>
+                <br>
+                <p style="color: white;">Hi I'm Jack Smith. Click here to add your own text and edit me.Ut enim ad minim veniam, quis nostrud</p>
+                <p style="color: white;"> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+                <p style="color: white;"> reprehenderit in voluptate velit esse cillum dolor eu fugiat nulla pariatur.</p>
+                <br>
+                <p style="color: white;">Image by <u>Freepik.</u></p>
+            </div>
+            <div  class="second" style=" display: flex;height: 30%;width: 100%;flex-wrap: wrap;gap: 10px;justify-content: space-between;justify-content: center;align-items: center;gap: 20px;">
+
+
+                <div style="height: 200px;width: 180px; background-color: white;border-radius: 10px;box-shadow: 0 10px orange;padding: 20px;display: flex;flex-direction: column;gap: 20px;" class="child">
+                <img style="height:80px ;width: 80px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Md1mc-WfOPoWes4RM7jiRX_QpQ4VwxRdzA&usqp=CAU"/>
+                
+                <h4>Graphic Design</h4>
+                <p ><u>more</u></p>
+                </div>
+
+
+                <div style="height: 200px;width: 180px; background-color: white;border-radius: 10px;box-shadow: 0 10px orange;padding: 20px;display: flex;flex-direction: column;gap: 20px;" class="child">
+                    <img style="height:80px ;width: 80px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrckzKnQEi5raF0FeY8ywfwowGuBZ7rqqdSA&usqp=CAU"/>
+                    <h4>Web-Design</h4>
+                    <p ><u>more</u></p>
+                </div>
+
+
+
+                <div style="height: 200px;width: 180px; background-color: white;border-radius: 10px;box-shadow: 0 10px orange;padding: 20px;display: flex;flex-direction: column;gap: 20px;" class="child">
+                    <img style="height:80px ;width: 80px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC7MVnCukb39ZMCNTYcGuPKeIuYz2cU3Oakw&usqp=CAU"/>
+                    <h4>Software</h4>
+                    <p ><u>more</u></p>
+                </div>
+
+
+                <div style="height: 200px;width: 180px; background-color: white;border-radius: 10px;box-shadow: 0 10px orange;padding: 20px;display: flex;flex-direction: column;gap: 20px;" class="child">
+                    <img style="height:80px ;width: 80px;" src="data:image/png;base64,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"/>
+                    <h4>Application</h4>
+                    <p ><u>more</u></p>
+                </div>
+                    
+            </div>
+    </div>
+</body>
+</html>
