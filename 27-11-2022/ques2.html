@@ -12,19 +12,16 @@
         <td>Row1 cell2</td></tr>
         <tr><td>Row2 cell1</td>
         <td>Row2 cell2</td></tr>
-        </table>
+    </table>
+    <input type="button" onclick="insert_Row()" value="Insert row">
         
-        <input type="button" onclick="insert_Row()" value="Insert row">
-        
-        <script>
+    <script>
         let count = 3;
         function insert_Row() {
-         let a =  document.getElementById('sampleTable');
-         a.innerHTML +=`<tr><td>Row${count} cell1</td><td>Row${count} cell2</td></tr>`;
-        (function incrementRowNo() {
+        let a =  document.getElementById('sampleTable');
+        a.innerHTML +=`<tr><td>Row${count} cell1</td><td>Row${count} cell2</td></tr>`;
         count += 1;
-        })()
         }
-        </script>
+    </script>
 </body>
 </html>
