@@ -7,16 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <fieldset>
-            <h2>Input radius value and get the volume of a sphere</h2>
+      <div style="text-align: center; border: 2px solid black;height: 250px;width: 800px;">
+        <h2>Input radius value and get the volume of a sphere</h2>
             <label for="radius">Radius:</label><br>
             <input type="text" id="radius" name="radius"><br><br>
             <label for="volume">Volume:</label><br>
             <input type="text" id="volume" name="volume"><br><br>
             <button type="button" onclick="calculateVolume()">Calculate</button>
-        </fieldset>
-        </form>
+      </div>  
     <script>
         function calculateVolume() {
         let radius = Number(document.getElementById("radius").value);
