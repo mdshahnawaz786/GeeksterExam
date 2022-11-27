@@ -12,12 +12,12 @@
         <td>Row1 cell2</td></tr>
         <tr><td>Row2 cell1</td>
         <td>Row2 cell2</td></tr>
-    </table>
-    <input type="button" onclick="insert_Row()" value="Insert row">
+        </table><br>
+    <input type="button" onclick="addRow()" value="addRow">
         
     <script>
         let count = 3;
-        function insert_Row() {
+        function addRow() {
         let a =  document.getElementById('sampleTable');
         a.innerHTML +=`<tr><td>Row${count} cell1</td><td>Row${count} cell2</td></tr>`;
         count += 1;
