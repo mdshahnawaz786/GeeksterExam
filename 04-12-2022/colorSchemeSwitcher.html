@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+           text-align: center;
+           display: flex;
+           flex-direction: column;
+           padding: 20px;
+           gap: 20px;
+        }
+
+        #grayButton {
+             background: gray;
+        }
+
+        #whiteButton {
+             background: white;
+        }
+
+        #blueButton {
+            background: blue;
+        }
+
+        #yellowButton {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+        <h1>Color Scheme Switcher</h1>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <button id="grayButton" style="border: 1px solid black;height: 100px;width: 100px;border-radius: 50%;display: flex;"></button>
+            <button id="whiteButton" style="border: 1px solid black;height: 100px;width: 100px;border-radius: 50%;display: flex;"></button>
+            <button id="blueButton" style="border: 1px solid black;height: 100px;width: 100px;border-radius: 50%;display: flex;"></button>
+            <button id="yellowButton" style="border: 1px solid black;height: 100px;width: 100px;border-radius: 50%;display: flex;"></button>
+        </div>
+        <b>Try clicking on one of the colors above to change the colors on this page!</b>
+
+      <script>
+            document.getElementById("grayButton").onclick = grayButton;
+            document.getElementById("whiteButton").onclick = whiteButton;
+            document.getElementById("blueButton").onclick = blueButton;
+            document.getElementById("yellowButton").onclick = yellowButton;
+
+        function grayButton() {
+            document.getElementsByTagName("body")[0].style.backgroundColor = "gray"; 
+            document.getElementsByTagName("body")[0].style.color = "white"; 
+        }
+
+        function whiteButton() {
+            document.getElementsByTagName("body")[0].style.backgroundColor = "white"; 
+            document.getElementsByTagName("body")[0].style.color = "black"; 
+         }
+
+        function blueButton() {
+            document.getElementsByTagName("body")[0].style.backgroundColor = "blue"; 
+            document.getElementsByTagName("body")[0].style.color = "white"; 
+        }
+
+        function yellowButton() {
+            document.getElementsByTagName("body")[0].style.backgroundColor = "yellow"; 
+            document.getElementsByTagName("body")[0].style.color = "black"; 
+        }
+
+      </script>
+</body>
+</html>
