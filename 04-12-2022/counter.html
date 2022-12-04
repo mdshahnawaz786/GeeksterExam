@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <h1>Counter</h1>
+        <h1 class="count">0</h1>
+        <div style="display: flex; gap: 20px;">
+            <button style="border-radius: 4px;background-color: white;height: 30px;width: 100px;" onclick="decrement()">Decrease</button>
+            <button style="border-radius: 4px;background-color: white;height: 30px;width: 100px;" onclick="reset()">Reset</button>
+            <button style="border-radius: 4px;background-color: white;height: 30px;width: 100px;" onclick="increment()">Increase</button>
+        </div>
+    </div>
+
+    <script>
+         const NumberNode = document.getElementsByClassName("count")[0];
+         let number = parseInt(NumberNode.innerText);
+
+            function decrement(){
+              number -=1;
+              NumberNode.innerText = number;
+              NumberNode.style.color = "red"
+              }
+
+            function increment(){
+               number +=1;
+               NumberNode.innerText = number;
+               NumberNode.style.color = "red"
+             }
+             function reset(){
+                number = 0;
+                NumberNode.innerText = 0;
+             }
+    </script>
+</body>
+</html>
